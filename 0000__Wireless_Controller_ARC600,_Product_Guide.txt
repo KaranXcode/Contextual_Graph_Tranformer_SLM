@@ -1,0 +1,1139 @@
+—
+
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+The information in this document is subject to change without notice and should not be construed as a commitment by ABB. ABB assumes no responsibility for any
+errors that may appear in this document. In case of discrepancies between the English and any other language version, the wording of the English version shall
+ABB is a registered trademark of the ABB Group. All other brand or product names mentioned in this document may be trademarks or registered trademarks of their
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,Issued: 2022-06-20
+,Revision: H
+=== TABLE END ===
+Wireless Controller ARC600 is a compact, solution based
+device for remote controlling and monitoring of secondary
+substations, such as network disconnectors, load break
+switches and ring main units (RMU) in distribution networks. It
+enables the SCADA system to wirelessly monitor and control
+the field devices over the public communication infrastructure
+(cellular network). Wireless Controller ARC600 utilizes the
+built-in wireless communication features for reliable and
+secure end-to-end communication providing remote
+monitoring and control of three switching devices and can be
+expanded as required by using external I/O expansion
+The use of Wireless Controller ARC600 in distribution
+networks improves the quality of power distribution and
+reduces the outage time in the affected areas. Areas directly
+adjacent to these affected areas show reduced outages and
+overall effects. This also reduces the capital expenditures in
+the distribution network by allowing integration of legacy
+devices and contributes to more direct cost savings by
+facilitating preventative maintenance. The operational
+expenditure can be reduced by lowering the System Average
+Interruption Duration Index (SAIDI) and System Average
+Interruption Frequency Index (SAIFI), resulting in lower
+penalties for undelivered energy. Wireless Controller ARC600
+is also ideally suited to be retrofitted to existing applications
+thus enabling the remote control of these devices and further
+extending the life cycle of the switching devices itself.
+Typically, the IEC-104 protocol is utilized for communication
+to the SCADA system but for the existing installations with a
+IEC-101 line or modem, Wireless Controller ARC600 supports
+also IEC-101 communication (including dial-up) to the SCADA
+Communication system overview with Wireless Controller ARC600 and ring main unit
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+Wireless Controller ARC600 at remote site connected with ring main unit and RIO600. RTU monitoring and control combined with
+directional fault passage indication example.
+2. Complete communication system
+Wireless Controller ARC600 is typically part of a complete
+communication system which consists of Arctic 600 series
+gateways or controllers and a central M2M Gateway ARM600
+communication server. The M2M gateway is an essential part
+of the total communication solution and offers features that
+are needed to build a reliable end-to-end communication
+• Static IP addressing for Arctic 600 series devices –
+Possibility to use operator independent standard SIM
+• VPN Concentrator – Secure communication between a
+central location and remote sites
+• Arctic Patrol – Centralized device management
+application for the Arctic 600 series devices monitoring
+• Firewall – A network security system to control the
+incoming and outgoing network traffic
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+The functionalities of Wireless Controller ARC600 have been
+developed to monitor and control switching devices inside a
+secondary substation. Connected to the central control
+system (SCADA/DMS) that manages the utility network, they
+serve as the core of the secondary substation automation
+• Highly reliable control and monitoring of up to three
+switching devices per ARC600
+– Status information of three switching devices and
+– Disconnector position and earthing status indications
+– Local and remote use of the disconnectors
+• Overload protection of actuator motors
+– Load current measured in the motor circuit
+– Current limit based motor overload protection
+– Measurement of disconnector open and close times
+• Fault Passage Indication (FPI) support for improved fault
+– Support for external medium voltage directional fault
+indication and for multifunction low voltage power
+• Integrated wireless communication
+– Always on two-way communication based on cellular
+networks (GPRS, 3G, LTE)
+– Communication monitoring and automatic connection
+– High level data security through internal VPN and
+– Support for Arctic Patrol centralized device
+– Conventional IEC-101 and Modbus serial devices can
+be connected in a reliable way to the modern TCP/IP
+based IEC-104 and Modbus TCP control systems
+• Built-in battery charger with advanced battery control
+– Temperature compensated charging
+– Battery monitoring/testing (condition monitoring)
+– Deep discharge protection
+• IEC-101 SCADA compliancy
+– IEC 60870-5-101 slave (including dial-up) to support
+the existing system installations
+– Possibility for future SCADA migration from IEC-101 to
+IEC-104 is supported as the operating mode is
+selected using the parameter settings
+– IEC-101 operation mode as unbalanced slave
+• Heater control to limit the effects of ambient temperature
+variations such as condensation
+• Robust aluminium casing design and easy DIN rail
+=== TABLE START ===
+troller,1MRS758465 H
+on: 3.4,
+=== TABLE END ===
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+Within the UEMC 50 the ARC600 unit is used for the remote control of a disconnector. The motor operating device is placed in the
+same UEMC 50 enclosure as the other equipment.
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+=== TABLE START ===
+"ARC600
+aux
+Battery charging
++24V DC
+mA+-
+Battery test
+Heater control",,,
+,,O,"O
+I"
+,,I,
+=== TABLE END ===
+LV compartment in RMU
+An ARC600 unit used for the remote control of a Ring Main Unit and fault indication
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+=== TABLE START ===
+"+
+mA-",
+=== TABLE END ===
+Within the UEMC control cabinet, the ARC600 unit is used for the remote control of a disconnector. The motor operating device is
+fitted to the disconnector.
+4. Battery condition monitoring
+Wireless Controller ARC600 is equipped with a condition
+monitoring based battery charger. This allows scheduled
+monitoring of the backup batteries inside the control cabinet
+which enables the optimization of lifetime and maintenance
+intervals of the backup batteries. The backup battery can be
+either manually or periodically tested by switching off the
+charger and switching on the external dummy load.
+Manual testing can be initiated from a central control system
+via the IEC-104 protocol. Based on the current and voltage
+measurements taken from the battery, an assessment is
+made regarding the battery’s condition and remaining
+operational capacity (in Ah). Based on these measurements of
+the battery’s current and voltage levels, an IEC 60870-5-104
+alarm event is then generated in the system.
+ARC600 has also protection against complete battery
+5. Motor overload protection
+Wireless Controller ARC600 protects the disconnector motor
+by using overcurrent detection. The current of the
+disconnector motor is continuously measured and if the
+preset value is exceeded, the current supply to the motor is
+cut. The preset current value should be set so that the
+current supply to the motor is cut before the motor protection
+fuse opens the circuit. This leads to less site visits to reset
+the fuse. Typically, rust or ice might cause the disconnector
+blades to get stuck in the closed position, resulting in either
+damage to the disconnector motor due to overcurrent or
+operation of the protection fuse.
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+Wireless Controller ARC600 is equipped with numerous
+inputs and outputs to interface with the controllable
+substation equipment. ARC600 has 17 binary inputs, 10
+binary outputs and 2 analog inputs. There are also two serial
+ports (RS-232, RS-485) and one LAN/WAN port for device
+ARC600 is equipped with groups of LEDs indicating the
+complete operational status of the device. The LEDs are
+located on the front panel and are identified by the
+AC and LINK LEDs
+Grounding disconnector status LEDs
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+=== TABLE START ===
+Label,,State,Description
+VPN,,On,VPN connection is up
+,,Flashing,VPN connection is starting
+,,Off,VPN connection is disabled
+Power/Error,,On,Operating power is turned on
+,,Off,Operating power is turned off
+Function,,On,Device is starting
+,,Flashing,Device is operating normally
+Eth,,On,Ethernet link is up
+,,Flashing,Ethernet link is transferring data
+,,Off,Ethernet link is down
+Cellular,,On,"This LED is controlled by the internal communication
+module logic. For more information, see Tools/Modem
+info on the Web HMI."
+,,Flashing,"This LED is controlled by the internal communication
+module logic. For more information, see Tools/Modem
+info on the Web HMI."
+,,Off,Cellular connection is inactive
+AC,,On,Connected to AC power
+,,Off,Not connected to AC power
+LINK,,On,IEC 60870-5-104 control link to SCADA is active
+,,Off,IEC 60870-5-104 control link to SCADA is active
+DISCONNECTORS 1...3,OPEN,On/Off,Open position indication for disconnector
+,CLOSE,,Close position indication for disconnector
+,REMOTE,On,Remote control indication
+,,Off,Local control indication
+GROUNDING 1...3,OPEN,On/Off,Open position indication for grounding disconnector
+,CLOSE,,Close position indication for grounding disconnector
+=== TABLE END ===
+Table 1. Description of available LEDs
+VPN connection is up
+VPN connection is starting
+VPN connection is disabled
+Operating power is turned on
+Operating power is turned off
+Device is operating normally
+Ethernet link is up
+Ethernet link is transferring data
+Ethernet link is down
+This LED is controlled by the internal communication
+module logic. For more information, see Tools/Modem
+info on the Web HMI.
+This LED is controlled by the internal communication
+module logic. For more information, see Tools/Modem
+info on the Web HMI.
+Cellular connection is inactive
+Connected to AC power
+Not connected to AC power
+IEC 60870-5-104 control link to SCADA is active
+IEC 60870-5-104 control link to SCADA is active
+Open position indication for disconnector
+Close position indication for disconnector
+Open position indication for grounding disconnector
+Close position indication for grounding disconnector
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+Console serial port (DIP switch selectable application or console port RS1)
+Serial console switch (RS1)
+Serial port 2 hardware configuration DIP switches
+ARC600 has a SIM card insertion slot with SIM card tray and
+SMA type antenna connector on the antenna panel.
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+SIM card tray connector
+SIM card tray release button
+Antenna connector SMA (female)
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+Wireless Controller ARC600 provides a complete solution for
+monitoring and controlling field devices. A secure
+communication channel can be formed for remote serial
+(RS-232/RS-485) or Ethernet field devices over a GPRS, 3G
+or LTE connection. ARC600 makes it possible to have cost-
+effective communication networks over long distances at high
+Several interfaces are available for field device connectivity:
+digital inputs and outputs, analog inputs, serial and Ethernet
+ports. Industrial protocols IEC-104, IEC-101 and Modbus
+TCP are supported for the SCADA connectivity. The inputs
+and outputs of ARC600 can be accessed and controlled with
+the IEC-104 and IEC-101 protocols.
+With the Wireless Controller ARC600 protocol conversion
+feature, conventional IEC-101, Modbus RTU and Modbus
+TCP devices can be connected in a reliable way to modern
+TCP/IP based IEC-104 control systems.
+Modbus to IEC-104 conversion
+ARC600 provides support for generic Modbus RTU and
+Modbus TCP devices such as ABB's RIO600. In addition,
+support is also provided for the preselected Modbus
+parameters for Fault Passage Indicators (FPI). Currently,
+Horstmann Compass B and Kries IKI-50 are supported.
+ARC600 polls the fault indicator devices, connected to the
+serial port, using Modbus protocol and converts the values to
+IEC 60870-5-104. Up to four fault indicators can be
+connected to one device. IEC 60870-5-104 is used to
+communicate towards a SCADA via the Arctic M2M Gateway
+over the available customer chosen cellular data network.
+IEC-101 to IEC-104 conversion
+With ARC600, conventional IEC 60870-101 serial devices can
+be attached to a modern TCP/IP based IEC 60870-5-104
+control system. This is enabled by the protocol conversion
+ARC600 (IEC-101 master) uses local synchronous data
+polling where it continuously sends requests and the IEC-101
+device (IEC-101 slave) responds. In the direction of the
+control room, the communication protocol is IEC-104 and
+ARC600 can send events asynchronously as they arise while
+SCADA performs only slow-period background scans.
+Another advantage of the local protocol conversion is an
+advanced data acknowledgement mechanism. IEC-104
+allows multiple packets, and multiple events in a single
+packet, to be acknowledged collectively and the packets can
+be buffered up to the time of acknowledgement from SCADA.
+Modbus RTU to Modbus conversion
+Modbus field devices use usually serial mode (RTU or ASCII)
+protocol while the SCADA communication uses TCP/IP based
+Modbus TCP protocol. The Modbus user community has
+defined the functionality for required protocol integration, that
+is, how the Modbus RTU devices can talk to the Modbus TCP
+SCADA system. This functionality is a protocol conversion
+and it is implemented in ARC600. Many industrial devices like
+PLCs and RTUs support RS-485 Modbus RTU mode. In
+RS-485 mode, ARC600 can integrate unlimited number of
+serial slaves to TCP/IP network (SCADA).
+ARC600 has two application serial ports. Serial port 1 is
+configurable to either console or data mode and it supports
+only RS-232, while serial port 2 is configurable to multiple
+serial modes (RS-232/RS-422/RS-485). Serial port
+connectors are 9-pin D-sub (male) connectors. More
+information is available in the Technical data section of this
+product guide or technical manual available at
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+=== TABLE START ===
+Description,Value
+Height × Width × Depth,175 × 160 × 108 mm
+Weight,2.4 kg
+Protection class,IP30
+=== TABLE END ===
+=== TABLE START ===
+Description,,Value
+Processor environment,Processor,32 bit RISC
+,Memory,128 MB Flash
+,,128 MB RAM
+Other,Sensor,Temperature
+,Internal clock,Real time
+Power,Power supply,"Nominal auxiliary voltage U :
+n
+100...165 V DC or 100...240 V AC 50/60 Hz
+Auxiliary voltage variation:
+85...200 V DC or 90...264 V AC"
+,,20...30 V DC (external battery)
+,Frequency range,45...65 Hz
+,"Input current, 100% load, 230 V
+AC",0.8 A
+,"Efficiency, typical (230 V AC,
+100% load)",>83%
+,Isolation,Input/ground 1500 V AC RMS 50 Hz 1 min Input
+,,Output 3000 V AC RMS 50 Hz 1 min
+,,Output/ground 500 V DC
+,"Inrush current 25°C, 230 V AC",<25 A <5 ms
+,Input fuse,T3.15 A high breaking
+,Power consumption,"10 W typical (when not charging battery), 60 W (full charging)"
+,Overvoltage transient protection,VDR 275 V AC 72 J
+,"Holdup time (230 V, 100% load)",>50 ms
+Casing,,Aluminium shell
+Approvals,,CE
+Environmental conditions,Temperature range1),-30...+55°C (non condensing)
+,,-40...+70°C (storage)
+,Relative humidity,5...85% RH
+=== TABLE END ===
+Height × Width × Depth
+Nominal auxiliary voltage Un:
+20...30 V DC (external battery)
+Input current, 100% load, 230 V
+Efficiency, typical (230 V AC,
+Input/ground 1500 V AC RMS 50 Hz 1 min Input
+Output 3000 V AC RMS 50 Hz 1 min
+Output/ground 500 V DC
+Inrush current 25°C, 230 V AC
+T3.15 A high breaking
+10 W typical (when not charging battery), 60 W (full charging)
+The maximum operating temperature is +40°C at 1 A load on X2.1 pin 6.
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+=== TABLE START ===
+Description,Yasa NP 17-12,Yasa NPL 24-12
+Rated voltage,12 V,12 V
+Capacity,17 Ah,24 Ah
+Weight,6.1 kg,9 kg
+Size (L × W × H),181 × 76 × 167 mm,166 × 175 × 125 mm
+=== TABLE END ===
+=== TABLE START ===
+Description,Value
+Output voltage,21...29 V
+Output current,"1 A continuous, 2.2 A peak"
+Output overvoltage protection level,30.5 V
+=== TABLE END ===
+=== TABLE START ===
+Description,Value
+Rated charging voltage,27.4 V at 20°C
+Output power,60 W
+Fuse,4 A
+Temperature compensation,-40 mV/°C
+Output overvoltage protection level,30.5 V
+=== TABLE END ===
+=== TABLE START ===
+Master protocol,Slave protocol
+IEC 60870-5-104,IEC 60870-5-101
+IEC 60870-5-104,Modbus TCP
+IEC 60870-5-104,Modbus RTU/ASCII
+IEC 60870-5-104,Modbus (RTU) profile for Horstmann Compass B
+IEC 60870-5-104,Modbus (RTU) profile for Kries IKI-50
+IEC 60870-5-101,Modbus RTU
+IEC 60870-5-101,Modbus TCP
+IEC 60870-5-101,Modbus (RTU) profile for Horstmann Compass B
+IEC 60870-5-101,Modbus (RTU) profile for Kries IKI-50
+Modbus TCP,Modbus RTU
+TCP/IP,Serial gateway - serial port data stream (such as DNP3)
+=== TABLE END ===
+Table 4. Battery recommendations
+Table 5. Supply for external devices and input circuits (X2.1 pin 6)
+1 A continuous, 2.2 A peak
+Output overvoltage protection level
+Table 6. Temperature-compensated charger for batteries
+Output overvoltage protection level
+Table 7. Supported protocols
+Modbus (RTU) profile for Horstmann Compass B
+Modbus (RTU) profile for Kries IKI-50
+Modbus (RTU) profile for Horstmann Compass B
+Modbus (RTU) profile for Kries IKI-50
+Serial gateway - serial port data stream (such as DNP3)
+Table 8. Supported protocols for I/O controlling
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+=== TABLE START ===
+Description,,Value
+"Digital inputs (0...60 V DC, >18 V DC detected
+as 1)","Digital inputs for the disconnector status
+control
+• Disconnector 1: Open/closed, local/remote
+use, grounding open/closed – 5 pcs
+• Disconnector 2: Open/closed, local/remote
+use, grounding open/closed – 5 pcs
+• Disconnector 3: Open/closed, local/remote
+use, grounding open/closed – 5 pcs",15
+,"Extra general purpose digital inputs reserved
+for other use",2
+,Total number of digital inputs,17
+Digital outputs (1 A/30 V DC continuous carry),"Digital outputs for the disconnector open/close
+command
+• Disconnector 1: Open/close – 2 pcs
+• Disconnector 2: Open/close – 2 pcs
+• Disconnector 3: Open/close – 2 pcs",6
+,"Digital output for the load cut (motor overload
+protection)",1
+,"Digital output for the test load of the battery
+test (test load)",1
+,Digital output for the external heater,1
+,"Extra general purpose digital output reserved
+for other use",1
+,Total number of digital outputs,10
+"Analog inputs (-5...+5 V measurement, ±300
+mV for -10...+55°C, 0 V...+5 V)",Load measurement (DC motor load current),1
+,Extra reserved for other use,1
+,Total number of analog inputs,2
+=== TABLE END ===
+=== TABLE START ===
+Description,,Value
+Digital inputs,Number of digital inputs,17
+,Operating range,18...60 V DC (>18 V DC detected as 1)
+,Current drain,3.5...12.5 mA
+,Power consumption/input,<0.8 W
+,Input polarity,bipolar
+,Isolation,3 kV
+Digital outputs,Number of digital outputs,10
+,Output pin rated voltage,24 VDC
+,Continuous carry 30 VDC,1 A
+=== TABLE END ===
+Table 9. Default I/O configuration
+Digital inputs (0...60 V DC, >18 V DC detected
+Digital inputs for the disconnector status
+• Disconnector 1: Open/closed, local/remote
+use, grounding open/closed – 5 pcs
+• Disconnector 2: Open/closed, local/remote
+use, grounding open/closed – 5 pcs
+• Disconnector 3: Open/closed, local/remote
+use, grounding open/closed – 5 pcs
+Extra general purpose digital inputs reserved
+Total number of digital inputs
+Digital outputs (1 A/30 V DC continuous carry)
+Digital outputs for the disconnector open/close
+• Disconnector 1: Open/close – 2 pcs
+• Disconnector 2: Open/close – 2 pcs
+• Disconnector 3: Open/close – 2 pcs
+Digital output for the load cut (motor overload
+Digital output for the test load of the battery
+Digital output for the external heater
+Extra general purpose digital output reserved
+Total number of digital outputs
+Analog inputs (-5...+5 V measurement, ±300
+Load measurement (DC motor load current)
+Extra reserved for other use
+Total number of analog inputs
+Table 10. I/O specifications
+Number of digital inputs
+Number of digital outputs
+Output pin rated voltage
+Continuous carry 30 VDC
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+=== TABLE START ===
+Description,,Value
+Ethernet ports,Ethernet/LAN,10/100 Base-T. Shielded RJ-45
+,,1.5 kV isolation transformer
+,,"Ethernet IEEE 802-3, 802-2"
+Serial ports,Serial 1/Console,RS-232 DTE
+,,Male DB-9 connector
+,,IEC 60870-5-101 protocol support
+,,Full serial and modem signals
+,,300...460 800 bps
+,,Data bits: 7 or 8
+,,Stop bits: 1 or 2
+,,"Parity: None, Even, Odd"
+,,"Flow control: None, RTS/CTS"
+,,Protection: 15 kV ESD and short circuit
+,,"Console: RS-232, 19200 bps, 8 data bits, 1 stop bit, no parity (8N1)"
+,Serial 2,"RS-232 DTE, RS-422, RS-485 (selectable)"
+,,Male DB-9 connector
+,,IEC 60870-5-101 protocol support
+,,Full serial and modem signals
+,,300...460 800 bps
+,,Data bits: 7 or 8
+,,Stop bits: 1 or 2
+,,"Parity: None, Even, Odd"
+,,"Flow control: None, RTS/CTS"
+,,Protection: 15 kV ESD and short circuit
+=== TABLE END ===
+=== TABLE START ===
+Description,,Reference
+"Emission tests according to the
+test specification IEC 61850-3
+(Edition 2.0 2013-12)",Radiated disturbance,CISPR 16-2-3
+,Conducted disturbance,CISPR 16-2-1
+"Immunity tests according to the
+test specification IEC 61850-3
+(Edition 2.0 2013-12)",Electrostatic discharge (ESD),EN 61000-4-2 (2008-12)
+,"Radiated radiofrequency
+electromagnetic field",EN 61000-4-3 (2006-02)
+,Electrical fast transient (EFT),EN 61000-4-4 (2012-04)
+,Surge,EN 61000-4-5 (2005-11)
+,"Conducted radiofrequency
+electromagnetic field",EN 61000-4-6 (2008-10)
+,Power frequency magnetic field,EN 61000-4-8 (2009-09)
+,Voltage dips,EN 61000-4-11 (2004-03)
+=== TABLE END ===
+Table 11. Network interfaces
+10/100 Base-T. Shielded RJ-45
+1.5 kV isolation transformer
+IEC 60870-5-101 protocol support
+Full serial and modem signals
+Data bits: 7 or 8
+Stop bits: 1 or 2
+Parity: None, Even, Odd
+Flow control: None, RTS/CTS
+Protection: 15 kV ESD and short circuit
+Console: RS-232, 19200 bps, 8 data bits, 1 stop bit, no parity (8N1)
+IEC 60870-5-101 protocol support
+Full serial and modem signals
+Data bits: 7 or 8
+Stop bits: 1 or 2
+Parity: None, Even, Odd
+Flow control: None, RTS/CTS
+Protection: 15 kV ESD and short circuit
+Table 12. Electromagnetic compatibility tests
+Emission tests according to the
+test specification IEC 61850-3
+Immunity tests according to the
+test specification IEC 61850-3
+Electrical fast transient (EFT)
+Power frequency magnetic field
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+=== TABLE START ===
+Description,Reference
+Directive,RoHS directive 2002/95/EC
+,REACH directive 2006/1907/EC
+=== TABLE END ===
+Table 13. RoHS and REACH compliancy
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+=== TABLE START ===
+Description,ARC600A2324NA
+Radio IF,LTE
+Data speed max,See the mobile data reference guide (2NGA001029).
+=== TABLE END ===
+=== TABLE START ===
+Description,Order code
+Test load resistor,2RCA028171
+NTC resistor,2RCA028226
+Hall sensor,2RCA028227
+3G puck antenna (SMA male),2RCA037240
+DIN rail mounting kit (metal),2RCA037241
+I/O connector set,2RCA037242
+Power cord (European plug),2RCA037647
+SMA(m)/FME(m) adapter1),2RCA037659
+Laird LTE antenna 700...2700 MHz (SMA male),2RCA037660
+=== TABLE END ===
+The devices have been equipped with mounting
+arrangements that are specially designed to enable DIN rail
+mounting inside the control cabinets. A set of DIN rail
+mounting clips is included with the devices.
+The product label contains basic information about the unit
+such as product name, serial number and Ethernet MAC
+The product label is found on top of the device.
+The order number consists of a string of codes generated
+from the device's hardware and software modules. Use ABB
+Library to access the selection and ordering information and
+to generate the order number.
+Table 14. Ordering data
+See the mobile data reference guide (2NGA001029).
+11. Accessories and ordering data
+Certain equipment accessories can be attached to the
+devices to increase the flexibility and functionality of the
+devices according to the application requirements within the
+network. More information regarding these additions should
+be requested and discussed when planning and ordering the
+equipment from ABB Distribution Automation. Replacement
+parts for the devices are also available from ABB. This
+includes all external parts or components of the sold device
+that could have been damaged or lost. ABB does not supply
+internal components or parts. The external replacement parts,
+on the other hand, can be ordered from ABB After-Sales
+Service via Parts-OnLine .
+3G puck antenna (SMA male)
+DIN rail mounting kit (metal)
+Power cord (European plug)
+Laird LTE antenna 700...2700 MHz (SMA male)
+Needed for single SIM Arctic products, if the third party antenna's connector type is FME female
+More information is also available from
+The devices can be configured using a graphical user
+interface via a Web based browser. A conventional console
+interface is also provided. Software updates or configuration
+adjustments for the devices can be made remotely by
+uploads over the network from the central control center.
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+With DC (85...200 V DC), connect the
+negative wire to L and the positive to N.
+OPENED 1 CLOSED 1 OPENED 2 CLOSED 3 LOC/REM 1
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+=== TABLE START ===
+10,
+=== TABLE END ===
+=== TABLE START ===
+11,
+=== TABLE END ===
+=== TABLE START ===
+12,
+=== TABLE END ===
+=== TABLE START ===
+13,
+=== TABLE END ===
+=== TABLE START ===
+14,
+=== TABLE END ===
+=== TABLE START ===
+15,
+=== TABLE END ===
+OPENED 3 CLOSED 3
+DISCONNECTOR 3 STATUS & CONTROL
+1) Can be used as a 4...20 mA input using external resistor
+The abb.com/substationautomation portal provides
+information on the entire range of distribution automation
+=== TABLE START ===
+Wireless Controller,1MRS758465 H
+ARC600,
+Product version: 3.4,
+=== TABLE END ===
+=== TABLE START ===
+Document revision/date,Product version,History
+A/2015-12-18,A,First release
+B/2017-06-07,3.3,Content updated
+C/2017-09-22,3.4,Content updated to correspond to the product version
+D/2019-04-24,3.4.7,Content updated to correspond to the product version
+E/2021-02-19,3.4.7,Content updated
+F/2021-02-25,3.4.7,Content updated
+G/2021-05-31,3.4.7,Content updated
+H/2022-06-20,3.4,Content updated
+=== TABLE END ===
+15. Document revision history
+Content updated to correspond to the product version
+Content updated to correspond to the product version
+—
+
+=== TABLE START ===
+Wireless Gateway,1MRS758866 E
+ARG600 ANSI,
+Product version: 3.4.7,
+=== TABLE END ===
+The information in this document is subject to change without notice and should not be construed as a commitment by ABB. ABB assumes no responsibility for any errors
+that may appear in this document. In case of discrepancies between the English and any other language version, the wording of the English version shall prevail.
+ABB is a registered trademark of the ABB Group. All other brand or product names mentioned in this document may be trademarks or registered trademarks of their
+=== TABLE START ===
+Wireless Gateway,1MRS758866 E
+ARG600 ANSI,
+Product version: 3.4.7,Issued: 2021-05-31
+,Revision: E
+=== TABLE END ===
+Wireless Gateway ARG600 provides wireless monitoring and
+control of field devices via cellular network from a central site or
+a control center. The devices offer industrial quality connectivity
+for the TCP/IP and serial port based protocols. Wireless
+Gateway ARG600 exhibits integrated communication capability
+and seamless integration to the SCADA systems.
+Wireless Gateway ARG600 is a member of ABB’s Arctic
+product family and part of its 600 Wireless Gateway product
+By using Wireless Gateway ARG600, Ethernet and serial
+devices can be attached to a TCP/IP based control system.
+With Wireless Gateway ARG600, conventional IEC60870-101
+devices can be attached to a modern TCP/IP based IEC
+60870-5-104 control system. This is made possible by the
+protocol conversion from IEC 60870-5-101 to IEC 60870-104.
+ARG600 also supports Modbus RTU to Modbus TCP protocol
+conversion.DNP3 serial devices can be attached to a DNP3
+TCP SCADA system. In this case, the DNP3 protocol is
+transferred over TCP/IP communication (transparent serial
+Wireless Gateway ARG600 can be utilized for various industrial
+and utility applications to maximize the benefits.
+• Industrial grade TCP/IP router: several serial and TCP/IP
+based field devices can be integrated into a central
+supervisory and control system (SCADA)
+• Integrated protocol conversion enables connecting the
+legacy serial-based devices into a TCP/IP-based
+supervisory control system (SCADA)
+• Ideal for retrofitting by allowing the user to extend the life
+cycle of existing serial-based substation devices
+• Remote access to field devices means less site visits for
+• Optimizing the cost of communication by using public
+• Possibility to upgrade from the existing legacy's private
+radio system to a higher bandwidth cellular network based
+solution. This enables to fully maximize the usage of the
+existing application. For example, the video surveillance of
+traffic can now be integrated into the same system.
+2. Complete communication system
+Wireless Gateway ARG600 is typically part of a complete
+communication system which consists of Arctic 600 series
+gateways and a central M2M Gateway ARM600 communication
+server. The M2M gateway is an essential part of the total
+communication solution and offers features that are needed to
+build a reliable end-to-end communication system.
+• Static IP addressing for Arctic 600 series devices
+• VPN Concentrator – Secure communication between a
+central location and remote sites
+• Arctic Patrol – Centralized device management application
+for the Arctic 600 series devices monitoring and controlling
+• Firewall – A network security system to control the
+incoming and outgoing network traffic
+Communication system overview with Wireless Gateway ARG600 and a protection relay
+=== TABLE START ===
+Wireless Gateway,1MRS758866 E
+ARG600 ANSI,
+Product version: 3.4.7,
+=== TABLE END ===
+Wireless Gateway ARG600 can be used in feeder automation
+and substation applications to automate distribution networks
+in cooperation with other ABB grid automation equipment.
+Further, the devices can be used in secondary substations for
+various monitoring and control applications.
+ARG600 can be used in various industrial applications.
+• Enables remote service and maintenance opportunities by
+allowing the service personnel to remotely access any type
+of field devices. For example, these field devices can
+securely report the condition monitoring information, which
+allows planning of preventative maintenance.
+• Provides a fast, reliable and secure wireless link between
+Ethernet devices, such as a Distribution Automation
+Controller COM600F and 615 series protection relays
+• Offers backup connectivity for any communication link
+• Supports weather monitoring stations, live video
+streaming, building automation and smart traffic
+• Connects IEC-101, DNP or Modbus RTU protocol based
+meters and fault passage indicators into an upper-level
+• Protocol converter for IEC-101 to IEC-104 protocol
+• Wireless monitoring and control of IEC-101, IEC-104, DNP
+and Modbus field devices via cellular network
+• Always-on TCP/IP routing and serial over TCP/IP based
+• Arctic Patrol connectivity supervision of the communication
+• Secure communication with VPN and Firewall
+• OpenVPN client and server enable direct connection of
+one to five Arctic 600 series devices to a single Arctic 600
+• Static IP addressing with Arctic M2M Gateway ARM600
+=== TABLE START ===
+way,1MRS758866 E
+on: 3.4.7,
+=== TABLE END ===
+=== TABLE START ===
+Wireless Gateway,1MRS758866 E
+ARG600 ANSI,
+Product version: 3.4.7,
+=== TABLE END ===
+Wireless Gateway ARG600 has two serial ports (RS-232,
+RS-485) and one LAN/WAN port (RJ-45) for device
+connectivity. For communication to an upper-level system,
+ARG600 provides 4G LTE cellular network connectivity, but is
+also compatible with 3G (WCDMA) and GPRS networks.
+The LED panel of the device contains LEDs to indicate the
+complete operational status of the device.
+=== TABLE START ===
+Wireless Gateway,1MRS758866 E
+ARG600 ANSI,
+Product version: 3.4.7,
+=== TABLE END ===
+=== TABLE START ===
+LED,Label,State,Description
+1,Batt,-,LED unassigned
+2,Status,On,VPN connection is up
+,,Flashing,VPN connection is starting
+,,Off,VPN connection is disabled
+3,Power/Error,On,Operating power is turned on
+,,Off,Operating power is turned off
+4,Function,On,Device is starting
+,,Flashing,Device is operating normally
+,,Off,Device is not operational
+5,Eth 1,On,Ethernet link is up
+,,Flashing,Ethernet link is transferring data
+,,Off,Ethernet link down
+6,Eth 2,-,LED reserved for future use
+7,Led 1,-,LED reserved for future use
+8,Led 2,-,LED reserved for future use
+9,Led 2,-,LED reserved for future use
+10,Cellular,On,This LED is controlled by the internal cellular module.
+,,Flashing,Cellular connections up and active
+,,Off,Cellular connection is inactive
+=== TABLE END ===
+Table 1. Description of available LEDs
+VPN connection is up
+VPN connection is starting
+VPN connection is disabled
+Operating power is turned on
+Operating power is turned off
+Device is operating normally
+Device is not operational
+Ethernet link is up
+Ethernet link is transferring data
+LED reserved for future use
+LED reserved for future use
+LED reserved for future use
+LED reserved for future use
+This LED is controlled by the internal cellular module.
+Cellular connections up and active
+Cellular connection is inactive
+=== TABLE START ===
+Wireless Gateway,1MRS758866 E
+ARG600 ANSI,
+Product version: 3.4.7,
+=== TABLE END ===
+Power supply 12…48 VDC, limited (<240 VA) power source that fulfills the requirements of standard IEC 60950-1
+Antenna connector SMA (female)
+=== TABLE START ===
+Wireless Gateway,1MRS758866 E
+ARG600 ANSI,
+Product version: 3.4.7,
+=== TABLE END ===
+The SIM card slot and antenna connector can be found on the
+Wireless Gateway ARG600 provides a complete solution for
+integrating remote serial (RS-232/RS-485) or Ethernet devices
+with a central management system over a GPRS, 3G or LTE
+connection. Industrial protocols IEC-104, DNP-TCP and
+Modbus TCP are supported for the SCADA connectivity. With
+the ARG600 protocol conversion feature, conventional IEC-101
+and Modbus serial devices can be connected in a reliable way
+to modern TCP/IP based IEC-104 and Modbus TCP control
+ARG600 makes it possible to have cost-effective
+communication networks over long distances and at high data
+rates. When this is combined with the possibility for multiple
+field devices' connectivity by serial and Ethernet ports, ARG600
+Wireless Gateway is the ideal solution for the monitoring and
+controlling of field devices when a reliable and secure
+communication with high data bandwidth is required.
+ARG600 provides a secure and reliable communication solution
+with support for secure VPN communication, static IP routing,
+an intelligent self-testing system, NAT, port forwarding and a
+firewall for monitoring IP traffic and blocking unwanted
+More information is available in the Technical data section of
+this product guide or technical manual available at
+=== TABLE START ===
+Wireless Gateway,1MRS758866 E
+ARG600 ANSI,
+Product version: 3.4.7,
+=== TABLE END ===
+=== TABLE START ===
+Description,Value
+Width × Height × Depth,108 × 45 × 175 mm (without antenna)
+Weight,510 g
+=== TABLE END ===
+=== TABLE START ===
+Description,,Value
+Processor environment,Processor,32 bit RISC
+,Memory,128 MB Flash
+,,128 MB RAM
+Power,Power supply,"12…48 VDC, limited (<240 VA) power source that fulfills the requirements
+of standard IEC 60950-1"
+,Power consumption,1...5 W
+Other,Internal clock,Real time
+Approvals,,CE and FCC
+Environmental conditions,Temperature range,-30...+70°C (operating)
+,,-40...+85°C (storage)
+,Humidity,5...85% RH (non condensing)
+,Protection class,IP30
+=== TABLE END ===
+=== TABLE START ===
+Master protocol,Slave protocol
+IEC 60870-5-104,IEC 60870-5-101
+Modbus TCP,Modbus RTU/ASCII
+"TCP/IP, UDP/IP (DNP3)",Serial gateway - serial port data stream (such as DNP3)
+=== TABLE END ===
+Width × Height × Depth
+12…48 VDC, limited (<240 VA) power source that fulfills the requirements
+of standard IEC 60950-1
+5...85% RH (non condensing)
+Table 4. Supported protocols
+Serial gateway - serial port data stream (such as DNP3)
+=== TABLE START ===
+Wireless Gateway,1MRS758866 E
+ARG600 ANSI,
+Product version: 3.4.7,
+=== TABLE END ===
+=== TABLE START ===
+Description,,Value
+Ethernet ports,Ethernet/LAN,10/100 Base-T. Shielded RJ-45
+,,1.5 kV isolation transformer
+,,"Ethernet IEEE 802-3, 802-2"
+Serial ports,Serial 1/Console,RS-232 DTE
+,,Male DB-9 connector
+,,IEC 60870-5-101 protocol support
+,,Full serial and modem signals
+,,300...460 800 bps
+,,Data bits: 7 or 8
+,,Stop bits: 1 or 2
+,,"Parity: None, Even, Odd"
+,,"Flow control: None, RTS/CTS"
+,,Protection: 15 kV ESD and short circuit
+,,"Console: RS-232, 19200 bps, 8 data bits, 1 stop bit, no parity (8N1)"
+,Serial 2,"RS-232 DTE, RS-422, RS-485 (selectable)"
+,,Male DB-9 connector
+,,IEC 60870-5-101 protocol support
+,,Full serial and modem signals
+,,300...460 800 bps
+,,Data bits: 7 or 8
+,,Stop bits: 1 or 2
+,,"Parity: None, Even, Odd"
+,,"Flow control: None, RTS/CTS"
+,,Protection: 15 kV ESD and short circuit
+=== TABLE END ===
+Table 5. Network interfaces (single SIM variants)
+10/100 Base-T. Shielded RJ-45
+1.5 kV isolation transformer
+IEC 60870-5-101 protocol support
+Full serial and modem signals
+Data bits: 7 or 8
+Stop bits: 1 or 2
+Parity: None, Even, Odd
+Flow control: None, RTS/CTS
+Protection: 15 kV ESD and short circuit
+Console: RS-232, 19200 bps, 8 data bits, 1 stop bit, no parity (8N1)
+IEC 60870-5-101 protocol support
+Full serial and modem signals
+Data bits: 7 or 8
+Stop bits: 1 or 2
+Parity: None, Even, Odd
+Flow control: None, RTS/CTS
+Protection: 15 kV ESD and short circuit
+=== TABLE START ===
+Wireless Gateway,1MRS758866 E
+ARG600 ANSI,
+Product version: 3.4.7,
+=== TABLE END ===
+=== TABLE START ===
+Description,,Reference
+"Emission tests according to the test
+specification IEC 61850-3 (Edition
+2.0 2013-12)",Radiated disturbance,CISPR 16-2-3
+,Conducted disturbance,CISPR 16-2-1
+"Immunity tests according to the test
+specification IEC 61850-3 (Edition
+2.0 2013-12)",Electrostatic discharge (ESD),EN 61000-4-2 (2008-12)
+,"Radiated radiofrequency
+electromagnetic field",EN 61000-4-3 (2006-02)
+,Electrical fast transient (EFT),EN 61000-4-4 (2012-04)
+,Surge,EN 61000-4-5 (2005-11)
+,"Conducted radiofrequency
+electromagnetic field",EN 61000-4-6 (2008-10)
+,Power frequency magnetic field,EN 61000-4-8 (2009-09)
+=== TABLE END ===
+=== TABLE START ===
+Description,Reference
+Directive,RoHS directive 2002/95/EC
+,REACH directive 2006/1907/EC
+=== TABLE END ===
+=== TABLE START ===
+Description,Reference
+Standard,FCC 47 CFR FCC Part 15
+,ANSI C63.4-2014
+=== TABLE END ===
+Table 6. Electromagnetic compatibility tests
+Emission tests according to the test
+specification IEC 61850-3 (Edition
+Immunity tests according to the test
+specification IEC 61850-3 (Edition
+Electrical fast transient (EFT)
+Power frequency magnetic field
+Table 7. RoHS and REACH compliancy
+Table 8. FCC compliancy
+FCC 47 CFR FCC Part 15
+=== TABLE START ===
+Wireless Gateway,1MRS758866 E
+ARG600 ANSI,
+Product version: 3.4.7,
+=== TABLE END ===
+=== TABLE START ===
+Description,ARG600A1270NA,ARG600A1290NA
+Cellular operator,AT&T (operator approved),North America and Mexico generic
+Radio IF,LTE,LTE
+Data speed max,"See the mobile data reference guide
+(2NGA001029).","See the mobile data reference guide
+(2NGA001029)."
+LAN/WAN,1,1
+RS-232/RS-485,2,2
+SIM card,1,1
+Supply voltage,12...48 VDC,12...48 VDC
+=== TABLE END ===
+=== TABLE START ===
+Description,Order code
+DIN rail mounting kit,2RCA028234
+3G puck antenna (SMA male),2RCA037240
+Accessory kit,2RCA037645
+SMA(m)/FME(m) adapter1),2RCA037659
+Laird LTE antenna 700...2700 MHz (SMA male),2RCA037660
+America power supply single SIM variants,2RCA041791
+=== TABLE END ===
+The devices have been equipped with mounting arrangements
+that are specially designed for DIN rail mounting. A set of DIN
+rail mounting clips is recommended to be used when mounting.
+The device should be mounted preferably inside a robust,
+locked and weatherproof control cabinet.
+As the device uses a cellular radio for data transmission, the
+surrounding environment can negatively affect the efficacy of
+these radio signals. Therefore, if a device with the antenna is
+mounted on the antenna connector, the unit should not be
+placed in a location where the radio signal might be shadowed,
+and therefore deteriorated by nearby obstacles or enclosures.
+The large metallic surfaces, racks or walls with metallic
+structures (cabling, concrete iron, and so on) may degrade the
+antenna performance to a very high extent. In this case, it is
+highly recommended to use the optional external antenna with
+appropriate cable. This allows for better positioning of the
+devices, antennas and thus optimal performance.
+Another restriction to the positioning of the device during
+installation is that it should be mounted in such a way that the
+required environmental conditions that are set in the Technical
+data section of this product guide are met.
+The product label contains basic information about the unit
+such as product name, serial number and Ethernet MAC
+The product label is found at the bottom of the device.
+Table 9. Ordering data
+North America and Mexico generic
+See the mobile data reference guide
+See the mobile data reference guide
+9. Accessories and ordering data
+DIN rail mounting kit
+3G puck antenna (SMA male)
+Laird LTE antenna 700...2700 MHz (SMA male)
+America power supply single SIM variants
+Needed for single SIM Arctic products, if the third party antenna's connector type is FME female
+=== TABLE START ===
+Wireless Gateway,1MRS758866 E
+ARG600 ANSI,
+Product version: 3.4.7,
+=== TABLE END ===
+The devices can be configured using a graphical user interface
+via a Web based browser. A conventional console interface is
+also provided. Software updates or configuration adjustments
+for the devices can be made remotely by uploads over the
+network from the central control center.
+The abb.com/substationautomation portal provides information
+on the entire range of distribution automation products and
+=== TABLE START ===
+Wireless Gateway,1MRS758866 E
+ARG600 ANSI,
+Product version: 3.4.7,
+=== TABLE END ===
+=== TABLE START ===
+Document revision/date,Product version,History
+A/2017-09-22,3.4,First release
+B/2018-06-29,3.4.5,Content updated to correspond to the product version
+C/2019-04-24,3.4.7,Content updated to correspond to the product version
+D/2020-07-09,3.4.7,Content updated
+E/2021-05-31,3.4.7,Content updated
+=== TABLE END ===
+12. Document revision history
+Content updated to correspond to the product version
+Content updated to correspond to the product version
